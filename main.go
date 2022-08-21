@@ -41,7 +41,6 @@ func inputFileDriver(commands []string) {
 		panic("no end received, the last command has to be END")
 	}
 	store := getNewStore(storeLimit)
-	fmt.Println(commands)
 	commands = commands[1:]
 	for _, command := range commands {
 		processCommand(store, command, os.Stdout)
