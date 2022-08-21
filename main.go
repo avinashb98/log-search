@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	dat, err := os.ReadFile("input.txt")
+	dat, err := os.ReadFile("input_sample.txt")
 	check(err)
 	commands := strings.Split(string(dat), "\n")
 	filteredCommands := []string{}
