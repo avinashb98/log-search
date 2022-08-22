@@ -4,6 +4,7 @@ in memory logs search
 ## Installation
 ```shell
 git clone https://github.com/avinashb98/log-search
+cd log-search
 ```
 
 ## Usage
@@ -36,11 +37,13 @@ command
 END
 ```
 
+### Build and Run
 ```shell
 cp input_sample.txt input.txt
 # edit the sample commands file
 
-go run .
+go build .
+./log-search
 ```
 
 ## Test
